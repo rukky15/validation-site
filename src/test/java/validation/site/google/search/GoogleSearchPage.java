@@ -36,6 +36,6 @@ public class GoogleSearchPage extends PageObject {
     }
     public void inValidNews() {
         WebElement element = getDriver().findElement(By.xpath("//div[@id='rso']/div/div/div/div/div/a/h3"));
-        Assertions.assertThat(element.getText().substring(0, 20)).doesNotContain(Constants.ARTICLE_TITLE.substring(0, 20));
+        Assertions.assertThat(element.getText().substring(0, 10)).doesNotContain(Constants.ARTICLE_TITLE.substring(0, 10));
     }
 }
